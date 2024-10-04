@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "5823185955",
+    "project_id": "berserk-chatappreactnative",
+    "storage_bucket": "berserk-chatappreactnative.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5823185955:android:6d3062e41bccfa3d90dd96",
+        "android_client_info": {
+          "package_name": "com.realtimechatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn5ThpE4d81Ip-anAHDai8apWFuIDcPX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
