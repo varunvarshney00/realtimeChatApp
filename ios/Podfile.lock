@@ -2806,6 +2806,8 @@ PODS:
     - React-logger (= 0.75.4)
     - React-perflogger (= 0.75.4)
     - React-utils (= 0.75.4)
+  - RNDeviceInfo (13.0.0):
+    - React-Core
   - RNFBApp (21.0.0):
     - Firebase/CoreOnly (= 11.2.0)
     - React-Core
@@ -2817,7 +2819,51 @@ PODS:
     - Firebase/Storage (= 11.2.0)
     - React-Core
     - RNFBApp
-  - RNReanimated (3.9.0):
+  - RNReanimated (3.15.4):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - RNReanimated/reanimated (= 3.15.4)
+    - RNReanimated/worklets (= 3.15.4)
+    - Yoga
+  - RNReanimated/reanimated (3.15.4):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - RNReanimated/worklets (3.15.4):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2930,6 +2976,7 @@ DEPENDENCIES:
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCodegen (from `build/generated/ios`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - "RNFBFirestore (from `../node_modules/@react-native-firebase/firestore`)"
   - "RNFBStorage (from `../node_modules/@react-native-firebase/storage`)"
@@ -3089,6 +3136,8 @@ EXTERNAL SOURCES:
     :path: build/generated/ios
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNDeviceInfo:
+    :path: "../node_modules/react-native-device-info"
   RNFBApp:
     :path: "../node_modules/@react-native-firebase/app"
   RNFBFirestore:
@@ -3185,10 +3234,11 @@ SPEC CHECKSUMS:
   React-utils: d1bae5ac6a5fb94a772ebfc7a7e1aba3a6706a3a
   ReactCodegen: 99b435b58bd874bb0626b3fb16437d2e8735d370
   ReactCommon: 1007c09a406a451ddbd874e51511aa541d6034f6
+  RNDeviceInfo: 55264dd7cc939dad6e9c231a7621311f5277f1dc
   RNFBApp: 4122dd41d8d7ff017b6ecf777a6224f5b349ca04
   RNFBFirestore: 5f110e37b7f7f3d6e03c85044dd4cf3ebacec38b
   RNFBStorage: ba693a46973b442ef93d809c2b18e485af591e63
-  RNReanimated: dfa1dcf1e3e93516f8531dc0581520705d898a4d
+  RNReanimated: 5bc479ee962a00bc41a0cc573ff7daa083626173
   RNScreens: de55b9d7de8a017d1588dcb70415492d0b0597c2
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: b05994d1933f507b0a28ceaa4fdb968dc18da178

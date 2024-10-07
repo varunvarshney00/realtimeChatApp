@@ -39,8 +39,9 @@ const styles = StyleSheet.create({
     },
     searchBar: {
         fontSize: vh(15),
-        // borderWidth:1
-        marginLeft:vw(20)
+        // borderWidth:1,
+        marginLeft:vw(20),
+        width:vw(258),
 
     },
     leftarrow: {

@@ -4581,6 +4581,11 @@ mkdirp@^0.5.1:
 mkdirp@^1.0.4:
   version "1.0.4"
 
+moment@^2.30.1:
+  version "2.30.1"
+  resolved "https://registry.npmjs.org/moment/-/moment-2.30.1.tgz"
+  integrity sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==
+
 ms@^2.1.3, ms@2.1.3:
   version "2.1.3"
 
@@ -4973,6 +4978,11 @@ react-native-contacts@^8.0.1:
   version "8.0.1"
   resolved "https://registry.npmjs.org/react-native-contacts/-/react-native-contacts-8.0.1.tgz"
   integrity sha512-UWjtWaBUcaVoTNveVbH8v+q5iWNPm1F881gTDBsxelwZeSBD6KCa1MKynJnCNO1dOaIlMbZx+oF6Cc/44UrA5A==
+
+react-native-device-info@^13.0.0:
+  version "13.0.0"
+  resolved "https://registry.npmjs.org/react-native-device-info/-/react-native-device-info-13.0.0.tgz"
+  integrity sha512-TKCq4XKl8lzB04RdEbADxkbzDJwOfWcxZxNcf1LweT+A+KRAUv1no7bch7RM0WLyMVKMTa2hbusESnzxB5QQRA==
 
 react-native-get-random-values@*, react-native-get-random-values@^1.11.0:
   version "1.11.0"

@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     },
     searchBar: {
         fontSize: vh(15),
-
+        width:vw(288),
+        // borderWidth:1
     },
 });

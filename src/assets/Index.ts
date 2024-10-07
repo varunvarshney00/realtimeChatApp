@@ -9,6 +9,9 @@ const Icons = {
     menuBT: require('./icons/menuBT.png'),
     personBT: require('./icons/personBT.png'),
     noChatsYet: require('./icons/noChatsYet.png'),
+    threeDots: require('./icons/threeDots.png'),
+    plus: require('./icons/plus.png'),
+    send: require('./icons/send.png'),
 
 };
 

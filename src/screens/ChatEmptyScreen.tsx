@@ -5,6 +5,7 @@ import SearchBar from '../screenComponents/chatEmptyScreen/SearchBar'
 import Announcements from '../screenComponents/chatEmptyScreen/Announcements'
 import NoChatsYet from '../screenComponents/chatEmptyScreen/NoChatsYet'
 import ReadContacts from '../screenComponents/SearchScreen/ReadContacts'
+import ChattetUsersBody from '../screenComponents/chatEmptyScreen/ChattetUsersBody'
 
 const ChatEmptyScreen = () => {
   return (
@@ -14,6 +15,7 @@ const ChatEmptyScreen = () => {
         <SearchBar />
         <Announcements />
         <NoChatsYet />
+        {/* <ChattetUsersBody/> */}
       </View>
     </>
   )

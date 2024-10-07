@@ -8,7 +8,7 @@ const ChatEmptyScreen = () => {
 
     const getUserData = async ()=>{
         const userRef = await firestore().collection('users').doc('Gu3FW98uSdNFmqtH92LG').get();
-        console.log('userRef==>', userRef);
+        // console.log('userRef==>', userRef);
     };
 
 

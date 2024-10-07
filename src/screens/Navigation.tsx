@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Tabs from '../tabs/Tabs';
 import SearchScreen from './SearchScreen';
 import ChatRoom from './ChatRoom';
+import ChatScreen from './ChatScreen';
 
 
 
@@ -28,7 +29,7 @@ const Navigation: FC = () => {
             >
                 <Stack.Screen name="Tabs" component={Tabs} />
                 <Stack.Screen name="SearchScreen" component={SearchScreen} />
-                <Stack.Screen name="ChatRoom" component={ChatRoom} />
+                <Stack.Screen name="ChatScreen" component={ChatScreen} />
                 {/* <Stack.Screen
                     options={{
                         animation: 'fade',
