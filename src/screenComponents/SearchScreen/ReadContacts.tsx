@@ -16,6 +16,7 @@ const ReadContacts = () => {
     const [contacts, setContacts] = useState([]);
     const [userId, setUserId] = useState('');
     const [searchText, setSearchText] = useState('');
+    console.log('==userid==>', userId);
 
 
 

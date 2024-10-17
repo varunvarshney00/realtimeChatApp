@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Image, StyleSheet, TextInput, View } from 'react-native';
 import React from 'react';
 import { vh, vw } from '../../utils/Dimensions';
 import { Icons } from '../../assets/Index';
@@ -6,8 +6,8 @@ import { Icons } from '../../assets/Index';
 const SearchBar = () => {
     return (
         <View style={styles.searchBarContainer}>
-            <Image source={Icons.graySearch} style={{width:vw(15), height:vh(15), resizeMode:'contain', marginLeft:vw(18.5), marginRight:vw(18.5), tintColor:'#85929C'}}/>
-            <TextInput style={styles.searchBar} placeholder="Search messages..." placeholderTextColor="#ABB3BA"/>
+            <Image source={Icons.graySearch} style={styles.searchIcon} />
+            <TextInput style={styles.searchBar} placeholder="Search messages..." placeholderTextColor="#ABB3BA" />
         </View>
     );
 };
@@ -25,12 +25,18 @@ const styles = StyleSheet.create({
         backgroundColor: '#F8F9F9',
         marginTop: vh(20),
         fontWeight: '500',
-        alignItems:'center',
-
+        alignItems: 'center',
+    },
+    searchIcon: {
+        width: vw(15),
+        height: vh(15),
+        resizeMode: 'contain',
+        marginLeft: vw(18.5),
+        marginRight: vw(18.5),
+        tintColor: '#85929C',
     },
     searchBar: {
         fontSize: vh(15),
-        width:vw(288),
-        // borderWidth:1
+        width: vw(288),
     },
 });

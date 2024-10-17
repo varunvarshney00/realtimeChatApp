@@ -12,7 +12,15 @@ const Icons = {
     threeDots: require('./icons/threeDots.png'),
     plus: require('./icons/plus.png'),
     send: require('./icons/send.png'),
-
+    eye: require('./icons/eye.png'),
+    pin: require('./icons/pin.png'),
+    blackSearch: require('./icons/blackSearch.png'),
+    delete: require('./icons/delete.png'),
+    reply: require('./icons/reply.png'),
+    forward: require('./icons/forward.png'),
+    copy: require('./icons/copy.png'),
+    star: require('./icons/star.png'),
+    report: require('./icons/report.png'),
 };
 
 export {Icons};

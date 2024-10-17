@@ -6,6 +6,9 @@ import Announcements from '../screenComponents/chatEmptyScreen/Announcements'
 import NoChatsYet from '../screenComponents/chatEmptyScreen/NoChatsYet'
 import ReadContacts from '../screenComponents/SearchScreen/ReadContacts'
 import ChattetUsersBody from '../screenComponents/chatEmptyScreen/ChattetUsersBody'
+import AddTodo from '../screenComponents/todo/AddTodo'
+import Todo from '../screenComponents/todo/Todo'
+import AnimationTesting from '../screenComponents/chatEmptyScreen/AnimationTesting'
 
 const ChatEmptyScreen = () => {
   return (
@@ -13,9 +16,12 @@ const ChatEmptyScreen = () => {
       <View style={styles.bigContainer}>
         <Header />
         <SearchBar />
-        <Announcements />
-        <NoChatsYet />
+        {/* <Announcements /> */}
+        {/* <NoChatsYet /> */}
         {/* <ChattetUsersBody/> */}
+        {/* <AddTodo/> */}
+        {/* <Todo/> */}
+        <AnimationTesting/>
       </View>
     </>
   )
@@ -28,6 +34,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#e7edf3',
     height: '100%',
     zIndex: -999,
-    alignItems: 'center'
+    // alignItems: 'center'
   }
 })

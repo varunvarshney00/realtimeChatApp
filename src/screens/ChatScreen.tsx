@@ -4,13 +4,17 @@ import HeaderOfUser from '../screenComponents/chatScreen/HeaderOfUser'
 import firestore from '@react-native-firebase/firestore';
 import ChatBody from '../screenComponents/chatScreen/ChatBody';
 import ChatFooter from '../screenComponents/chatScreen/ChatFooter';
+import { Modal } from 'react-native';
 
 
 const ChatScreen = (props) => {
 
+    const [modalVisible, setModalVisible] = useState(false);
+
+
     const { contactId, userId } = props.route.params;
     // console.log('contactid==', contactId);
-    // console.log('userid==', userId);
+    console.log('userid==', userId);
 
     const generateChatId = () => {
         const sortedUserIds = [userId, contactId].sort();
@@ -21,10 +25,11 @@ const ChatScreen = (props) => {
     }
 
     const chatId = generateChatId();
+
     const chatRef = firestore().collection('chats').doc(chatId);
-    // console.log('chatRef==>', chatRef);
+    console.log('chatRef==>', chatRef.get());
     const useRef = firestore().collection('users').doc(userId);
-    // console.log('useRef==>', useRef);
+    console.log('useRef==>', useRef);
     const contactUserRef = firestore().collection('users').doc(contactId);
     // console.log('contactUserRef==>', contactUserRef);
 
@@ -52,10 +57,10 @@ const ChatScreen = (props) => {
 
 
     return (
-        <View style={{flex:1, backgroundColor:'#e7edf3'}}>
-            <HeaderOfUser contactName={contactName}/>
-            <ChatBody chatId={chatId} userId={userId}/>
-            <ChatFooter chatRef={chatRef} userId={userId}/>
+        <View style={{ flex: 1, backgroundColor: '#e7edf3' }}>
+            <HeaderOfUser chatId={chatId} contactName={contactName} />
+            <ChatBody chatRef={chatRef} chatId={chatId} userId={userId} />
+            {/* <ChatFooter chatRef={chatRef} userId={userId}/> */}
         </View>
     )
 }
